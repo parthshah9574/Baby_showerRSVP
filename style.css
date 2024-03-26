@@ -1,7 +1,10 @@
 body {
     font-family: "Arial", sans-serif;
-    background-color: #f0e6f6;
-    color: #333;
+    background-image: "/images/confetti.jpg";
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
     padding: 20px;
 }
 
@@ -20,7 +23,7 @@ body {
 }
 
 .contact-right {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,7 +80,7 @@ body {
 .invitation img {
     width: 100%;
 }
-
+/* 
 form input,
 form textarea {
     width: 100%;
@@ -94,7 +97,93 @@ form textarea {
 form input .radio {
     color: #fff;
     font-size: 18px;
+} */
+
+/* General form styling */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+/* Styling for the Number of People input to make it smaller and aligned */
+#numberOfPeople input[type="number"] {
+    width: 80px; /* Smaller width */
+    height: 40px; /* Adjusted height */
+    margin-top: 0; /* Align with the label */
+}
+
+/* Styling for radio buttons and labels for a cleaner look */
+.radio {
+    margin-right: 5px;
+}
+label {
+    margin-right: 15px;
+}
+
+/* Enhancing the button appearance */
+.btn2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn2:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling for the invitation section for better layout */
+.invitation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-right {
+    margin-top: 20px;
+}
+
+/* Styling for the top link to scroll up */
+.top-link {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 32px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.top-link:hover {
+    color: #0056b3;
+}
+
 /* 
 form .btn2 {
     padding: 14px 60px;
@@ -146,7 +235,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/me.JPEG);
+        background-image: "/images/confetti.jpg";
     }
     .header-text {
         margin-top: 100%;

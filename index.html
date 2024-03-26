@@ -74,6 +74,11 @@
                 background-color: #7a3d6d;
             }
 
+            button.btn.btn-primary {
+                margin-bottom: 10px;
+                margin-top: -20px;
+            }
+
             .top-link {
                 position: fixed;
                 bottom: 20px;
@@ -103,7 +108,10 @@
                 <div class="col-md-4 invitation">
                     <div class="contact-right">
                         <div class="container">
-                            <h1>Heta's Baby Shower</h1>
+                            <h1>
+                                Heta's <br />
+                                Baby Shower
+                            </h1>
                         </div>
                         <p>We would like you to invite to our Baby Shower</p>
 
@@ -144,18 +152,43 @@
                                     name="answer"
                                     value="No"
                                 />
+                                <div
+                                    id="numberOfPeople"
+                                    style="margin-top: 1px"
+                                >
+                                    <label for="people"
+                                        >Number of People:</label
+                                    >
+                                    <input
+                                        type="number"
+                                        id="people"
+                                        name="people"
+                                        min="1"
+                                        style="
+                                            margin-bottom: 10px;
+                                            width: 40px;
+                                            height: 30px;
+                                        "
+                                    />
+                                </div>
                             </div>
                             <div>
-                                <!-- <textarea
-                                    name="Message"
-                                    rows="6"
-                                    placeholder="Your Message"
-                                ></textarea> -->
                                 <span id="msg"></span>
                             </div>
-                            <button type="submit" class="btn btn2">
-                                Submit
-                            </button>
+                            <!-- Add to Calendar Button -->
+                            <div class="text-center mt-4">
+                                <button
+                                    onclick="window.open('https://www.google.com/calendar/render?action=TEMPLATE&text=Jay%20%26%20Heta%27s%20Baby%20Shower&dates=20240505T143000Z/20240505T183000Z&details=We%20are%20excited%20to%20invite%20you%20to%20our%20baby%20shower%20at%20India47%20restaurant.%20Join%20us%20to%20celebrate%20this%20joyous%20occasion!&location=India47%20restaurant%2C%201640%20Lesperance%20rd%2C%20Windsor%2C%20ON%20N8N%201Y3&sf=true&output=xml', '_blank')"
+                                    class="btn btn-primary"
+                                >
+                                    Add to Google Calendar
+                                </button>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn2">
+                                    Submit
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -169,6 +202,11 @@
                 <i class="fas fa-angle-up"></i>
             </a>
         </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
