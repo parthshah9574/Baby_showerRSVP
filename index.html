@@ -4,27 +4,109 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Parth Shah Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
+        <title>Heta's Baby Shower</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
         <script
             src="https://kit.fontawesome.com/55cb24e04a.js"
             crossorigin="anonymous"
         ></script>
-    </head>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                background-color: #f0e6f6;
+                color: #333;
+                padding: 20px;
+            }
 
+            #contact {
+                padding: 20px 0;
+            }
+
+            .invitation img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .invitation {
+                padding: 20px;
+            }
+
+            .contact-right {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            }
+
+            .contact-right textarea,
+            .contact-right input[type="text"],
+            .contact-right input[type="email"],
+            .contact-right textarea[name="Message"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .radio {
+                margin: 0 10px 10px 0;
+            }
+
+            .btn2 {
+                background-color: #8a4f7d;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .btn2:hover {
+                background-color: #7a3d6d;
+            }
+
+            .top-link {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                text-decoration: none;
+                color: #8a4f7d;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 50%;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .top-link i {
+                font-size: 24px;
+            }
+        </style>
+    </head>
     <body>
         <!-- Contact -->
 
         <div id="contact">
-            <div class="invitation">
-                <img src="/images/JHBaby_Shower-01.jpg" alt="" />
-            </div>
-            <div class="container">
-                <div class="row">
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 invitation">
+                    <img src="/images/JHBaby_Shower-01.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4 invitation">
                     <div class="contact-right">
-                        <textarea>
-We would like you to invite to our Baby Shower</textarea
-                        >
+                        <div class="container">
+                            <h1>Heta's Baby Shower</h1>
+                        </div>
+                        <p>We would like you to invite to our Baby Shower</p>
+
                         <form name="submit-to-google-sheet">
                             <input
                                 type="text"
@@ -38,36 +120,60 @@ We would like you to invite to our Baby Shower</textarea
                                 placeholder="Your Email"
                                 required
                             />
-                            <p>Are you coming?</p>
-                            <input
-                                class="radio"
-                                type="radio"
-                                name="answer"
-                                value="Yes"
-                            />
-                            <input
-                                class="radio"
-                                type="radio"
-                                name="answer"
-                                value="No"
-                            />
-                            <textarea
-                                name="Message"
-                                rows="6"
-                                placeholder="Your Message"
-                            ></textarea>
-                            <span id="msg"></span>
+                            <div>
+                                <h6>Will you be Attending?</h6>
+                                <label for="Yes">Yes</label>
+                                <input
+                                    class="radio"
+                                    type="radio"
+                                    name="answer"
+                                    value="Yes"
+                                />
+                                <label for="Maybe">May be</label>
+                                <input
+                                    class="radio"
+                                    type="radio"
+                                    name="answer"
+                                    value="May be"
+                                />
+
+                                <label for="No">No</label>
+                                <input
+                                    class="radio"
+                                    type="radio"
+                                    name="answer"
+                                    value="No"
+                                />
+                            </div>
+                            <div>
+                                <!-- <textarea
+                                    name="Message"
+                                    rows="6"
+                                    placeholder="Your Message"
+                                ></textarea> -->
+                                <span id="msg"></span>
+                            </div>
                             <button type="submit" class="btn btn2">
                                 Submit
                             </button>
                         </form>
                     </div>
                 </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="container">
+                <div class="row"></div>
             </div>
             <a href="#header" class="top-link">
                 <i class="fas fa-angle-up"></i>
             </a>
         </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
         <script src="script.js"></script>
     </body>
 </html>
